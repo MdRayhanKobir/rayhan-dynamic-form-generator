@@ -12,7 +12,7 @@ The package uses Laravel's auto-discovery to register its service provider. If a
     // Other providers...
     Rayhan\DynamicFormGenerator\DynamicFormGeneratorServiceProvider::class,
 ],
-``
+```
 # How to use in blade file
 ```bash
  @rayhanDynamicForm([
