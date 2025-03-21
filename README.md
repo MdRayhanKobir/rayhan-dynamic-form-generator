@@ -70,3 +70,13 @@ The package uses Laravel's auto-discovery to register its service provider. If a
                     ])
 
 ```
+# How to use validation in a controller?
+```bash
+  $formConfig = json_decode($request->input('form_config'), true);
+        $form = new DynamicFormGenerator($formConfig);
+        $validationResult = $form->validate($request);
+
+        if ($validationResult !== true) {
+            return $validationResult; 
+        }
+```
