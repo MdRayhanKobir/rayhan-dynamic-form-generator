@@ -16,10 +16,10 @@ The package uses Laravel's auto-discovery to register its service provider. If a
 # How to use in blade file
 ```bash
  @rayhanDynamicForm([
-                        'action' => '/submit-form',
+                        'action' => 'contact.submit',
                         'method' => 'POST',
                         'fields' => [
-                            ['type' => 'text', 'name' => 'full_name', 'label' => 'Full Name', 'class' => 'form--control', 'col' => 'col-md-6'],
+                            ['type' => 'text', 'name' => 'full_name', 'label' => 'Full Name', 'class' => 'form--control', 'col' => 'col-md-6','required' => true],
                             ['type' => 'email', 'name' => 'email', 'label' => 'Email Address', 'class' => 'form--control', 'col' => 'col-md-6'],
                             ['type' => 'password', 'name' => 'password', 'label' => 'Password', 'class' => 'form--control', 'col' => 'col-md-6'],
                             ['type' => 'number', 'name' => 'age', 'label' => 'Your Age', 'class' => 'form--control', 'col' => 'col-md-6'],
